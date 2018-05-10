@@ -1,11 +1,11 @@
-import media
+import media # is a module or source file with a reference to the class Movie 
 import fresh_tomatoes # must be in current folder file
-toy_story = media.Movie("Toy Story",
+# The class Movie calls the init method, which returns an instance of the following variables: the title, a short synopsis of the storyline,
+# an image, and a trailer url
+toy_story = media.Movie("Toy Story", 
                         "A story of a boy and his toys that come to life",
                         "http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
                         "https://www.youtube.com/watch?v=Ny_hRfvsmU8")
-# print (toy_story.storyline)
-# toy_story.show_trailer()
 avatar = media.Movie("Avatar","The story of a marine on an alien planet",
                         "https://upload.wikimedia.org/wikipedia/en/b/b0/Avatar-Teaser-Poster.jpg",
                         "https://www.youtube.com/watch?v=5PSNL1qE6VY")
@@ -29,5 +29,4 @@ The_Abyss = media.Movie("The Abyss", "Story of a underwater oil rig and a chance
                         "https://www.youtube.com/watch?v=WYPcLYPoaxo")
 movies = [toy_story, avatar, school_of_rock, Titanic, The_Terminator, strange_days, Solaris, The_Abyss]
 fresh_tomatoes.open_movies_page(movies)
-# print (media.Movie.VALID_RATINGS)
-# print (media.Movie.__doc__)
+
